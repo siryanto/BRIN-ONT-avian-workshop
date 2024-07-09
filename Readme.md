@@ -3,7 +3,7 @@
 ## 1. Mengakses MAHAMERU BRIN HPC dengan SSH
 Gunakan Terminal, Command Prompt, atau CLI software favorit Anda untuk menjalankan perintah SSH.
 ```
-ssh [Akun_SSO_BRIN]@login2.hpc.brin.go.id
+ssh [akun SSO BRIN]@login2.hpc.brin.go.id
 ```
 Jika berhasil, Anda masuk di login node bernama `trembesi02` seperti tampilan di bawah ini
 
@@ -35,12 +35,55 @@ Setelah proses instalasi selesai, logout terlebih dahulu dengan perintah `exit` 
 
 Login kembali ke MAHAMERU BRIN HPC dengan perintah SSH. Jika instalasi conda berhasil dan environment `base` diaktifkan otomatis, maka prompt di login node muncul `(base)` sebelum tulisan akun Anda, seperti contoh berikut.
 
-<img width="238" alt="image" src="https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/12a21b43-8ae7-4c43-908b-988af8387a89">
+![Screenshot 2024-07-09 at 13 06 21](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/8b0f3297-6ac4-4b74-8989-e81a19cae6e9)
 
-## 4. Buat dan aktifkan environment untuk analisis
-Buat environment dengan perintah `conda create` seperti berikut. Sebagai contoh, nama environment yang dibuat adakah 'avianworkshop'. 
+
+Anda dapat juga mengecek apakah Conda sudah terinstall atau belum dengan mengetikkan perintah 
 ```
-conda create -n avianworkshop
+ conda --version
 ```
-Tekan tombol 'Y' untuk konfirmasi ketika ditanya `Proceed ([y]/n)?`.
-Aktifkan environment yang telah kita buat
+Jika Conda telah berhasil terpasang, maka akan muncul nomor versi Conda yang terpasang, misal `conda 24.3.0`. 
+## 4. Buat dan aktifkan environment aplikasi untuk analisis
+Agar proses pembuatan environment dan instalasi aplikasi berjalan lancar, lakukan proses tersebut di interactive compute node dengan cara menjalankan perintah `srun` seperti pada langkah 2.
+
+Dalam workshop ini, ada 3 aplikasi yang akan digunakan, yaitu `NanoPlot` untuk QC, `flye` untuk melakukan denovo assembly, dan `medaka` untuk polishing hasil assembly. Ketiga aplikasi ini tersedia di Conda channel yang bernama 'bioconda`. 
+
+Karena dependencies dari masing-masing aplikasi yang digunakan tidak selalu seragam, terutama versi `python`, maka menggunakan satu environment untuk ketiga aplikasi di atas tidak memungkinkan. Dalam workshop ini, setiap aplikasi akan menggunakan environment sendiri. 
+### 4.1 Install NanoPlot
+```
+conda create -n nanolot -c bioconda NanoPlot
+```
+Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
+
+Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+```
+conda activate nanoplot
+NanoPlot --version
+
+```
+Jika berhasil, maka layar akan menampilkan kode versi NanoPlot. 
+### 4.2 Install flye
+```
+conda create -n flye -c bioconda flye
+```
+Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
+
+Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+```
+conda activate flye
+flye --version
+
+```
+### 4.3 Install medaka
+```
+conda create -n medaka -c bioconda medaka
+```
+Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
+
+Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+```
+conda activate medaka
+medaka --version
+
+```
+
