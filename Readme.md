@@ -86,4 +86,19 @@ conda activate medaka
 medaka --version
 
 ```
+## 5. Bekerja dengan sampel
+Sampel berupa berkas dengan format FASTQ telah tersedia di server. Untuk memudahkan, buat symbolic link (symlink) ke direktori kerja Anda. Sebelum melanjutkan, agar memudahkan Anda, aktifkan dahulu environment base dengan perintah berikut.
+```
+conda activate base
+```
+### 5.1 Buat direktori kerja
+Buatlah sebuah direktori untuk proyek ini, contoh: avian_worskhop.
+```
+mkdir avian_workshop
+```
+Masuk ke direktori kerja Anda
+```
+cd avian_workshop
+```
+
 
