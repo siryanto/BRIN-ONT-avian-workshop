@@ -86,7 +86,7 @@ conda activate medaka
 medaka --version
 
 ```
-## 5. Bekerja dengan sampel
+## 5. Menyiapkan data sampel
 Sampel berupa berkas dengan format FASTQ telah tersedia di server. Untuk memudahkan, buat symbolic link (symlink) ke direktori kerja Anda. Sebelum melanjutkan, agar memudahkan Anda, aktifkan dahulu environment base dengan perintah berikut.
 ```
 conda activate base
