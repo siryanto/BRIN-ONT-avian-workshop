@@ -111,4 +111,51 @@ ls
 ```
 Jika berhasil, akan ada sebuah berkas bernama `SRR15421342.sampled10K.fastq`.
 Berkas FASTQ tersebut merupakan berkas SRR15421342 yang diunduh dari DDBJ dan telah dilakukan resampling sebanyak 10K reads. Berkas asli berukuran 24GB, adapun berkas resampling hanya berukuran 0.5GB.
+## 6. Periksa sampel dengan NanoPlot
+```
+NanoPlot --fastq SRR15421342.sampled10K.fastq -t 8 -o nanoplot_result
+```
+Jika berhasil, output NanoPlot ada di direktori 'nanoplot_result' seperti berikut.
+![Screenshot 2024-07-11 at 06 54 00](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/31c225ad-1d9b-4c8f-b768-07806a0f58f2)
+Lihat summary statistik dengan perintah `less` seperti berikut
+```
+less nanoplot_result/NanoStats.txt
+```
+Hasilnya seperti di bawah ini
+```
+General summary:
+Mean read length:               26,687.2
+Mean read quality:                  11.5
+Median read length:             19,427.0
+Median read quality:                13.0
+Number of reads:                10,000.0
+Read length N50:                45,270.0
+STDEV read length:              26,049.6
+Total bases:               266,871,520.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:   8400 (84.0%) 228.8Mb
+>Q15:   1588 (15.9%) 44.3Mb
+>Q20:   0 (0.0%) 0.0Mb
+>Q25:   0 (0.0%) 0.0Mb
+>Q30:   0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:      19.3 (262)
+2:      19.0 (1)
+3:      18.5 (349)
+4:      18.5 (1076)
+5:      18.2 (274)
+Top 5 longest reads and their mean basecall quality score
+1:      347973 (15.0)
+2:      238044 (14.0)
+3:      225172 (13.6)
+4:      202808 (16.2)
+5:      199725 (14.9)
+```
+Untuk keluar dari perintah `less`, tekan tombol 'q' di keyboard Anda.
+## 7. Assembly menggunakan Flye
+```
+```
+## 8. Polishing menggunakan Medaka
+```
+```
 
