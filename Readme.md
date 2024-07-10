@@ -109,5 +109,6 @@ Lihat hasilnya dengan perintah `ls` seperti berikut
 ```
 ls
 ```
-Jika berhasil, akan ada sebuah file bernama `SRR15421342.sampled10K.fastq`
+Jika berhasil, akan ada sebuah berkas bernama `SRR15421342.sampled10K.fastq`.
+Berkas FASTQ tersebut merupakan berkas SRR15421342 yang diunduh dari DDBJ dan telah dilakukan resampling sebanyak 10K reads. Berkas asli berukuran 24GB, adapun berkas resampling hanya berukuran 0.5GB.
 
