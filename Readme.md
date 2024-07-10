@@ -100,5 +100,14 @@ Masuk ke direktori kerja Anda
 ```
 cd avian_workshop
 ```
-
+### 5.2 Buat symlink untuk sampel
+Buat symlink untuk sampel dengan perintah berikut
+```
+ln -s /mgpfs/data/workshop/SRR15421342.sampled10K.fastq
+```
+Lihat hasilnya dengan perintah `ls` seperti berikut
+```
+ls
+```
+Jika berhasil, akan ada sebuah file bernama `SRR15421342.sampled10K.fastq`
 
