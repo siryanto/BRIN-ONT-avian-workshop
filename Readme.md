@@ -52,7 +52,7 @@ Dalam workshop ini, ada 3 aplikasi yang akan digunakan, yaitu `NanoPlot` untuk Q
 Karena dependencies dari masing-masing aplikasi yang digunakan tidak selalu seragam, terutama versi `python`, maka menggunakan satu environment untuk ketiga aplikasi di atas tidak memungkinkan. Dalam workshop ini, setiap aplikasi akan menggunakan environment sendiri. 
 ### 4.1 Install NanoPlot
 ```
-conda create -n nanolot -c bioconda NanoPlot
+conda create -n nanoplot -c bioconda NanoPlot
 ```
 Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
 
