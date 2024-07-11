@@ -112,6 +112,11 @@ ls
 Jika berhasil, akan ada sebuah berkas bernama `SRR15421342.sampled10K.fastq`.
 Berkas FASTQ tersebut merupakan berkas SRR15421342 yang diunduh dari DDBJ dan telah dilakukan resampling sebanyak 10K reads. Berkas asli berukuran 24GB, adapun berkas resampling hanya berukuran 0.5GB.
 ## 6. Periksa sampel dengan NanoPlot
+Aktifkan NanoPlot env
+```
+conda activate nanoplot
+```
+Jalankan NanoPlot
 ```
 NanoPlot --fastq SRR15421342.sampled10K.fastq -t 8 -o nanoplot_result
 ```
@@ -159,9 +164,21 @@ Untuk keluar dari perintah `less`, tekan tombol 'q' di keyboard Anda.
 
 Hasil plot berupa citra PNG dan report HTML dapat diunduh dengan SFTP manager seperti: FileZilla, CyberDuck, dll. (Akan dijelaskan di akhir sesi jika masih ada waktu)
 ## 7. Assembly menggunakan Flye
+Aktifkan Flye env
 ```
+conda activate flye
+```
+Jalankan flye
+```
+flye --nano-raw SRR15421342.sampled10K.fastq --threads 4 --out-dir flye_result --scaffold
 ```
 ## 8. Polishing menggunakan Medaka
+Aktifkan Medaka env
 ```
+conda activate medaka
 ```
-
+Jalankan `medaka_consensus` sebagai berikut
+```
+medaka_consensus -i SRR15421342.sampled10K.fastq -d flye_result/assembly.fasta -o medaka_consensus_result -t 4 -f -m  r1041_e82_400bps_hac_g632
+```
+Catatan: opsi `-m  r1041_e82_400bps_hac_g632` merupakan model yang digunakan, disesuaikan dengan platform yang digunakan. Untuk kasus ini, karena sampel dilakukan seqeuncing dengan PromethION dan kita asumsikan menggunakan basecalling mode HAC, maka model tersebut yang digunakan. Selain itu, jika model tersebut belum diunduh, maka saat menjalankan `medaka_consensus` komputer/server/node harus dapat mengakses internet untuk mengunduh model yang digunakan.
