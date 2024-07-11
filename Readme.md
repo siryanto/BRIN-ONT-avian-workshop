@@ -16,7 +16,8 @@ srun --partition=interactive2 --cpus-per-task=4 --pty bash
 ```
 Jika berhasil, maka Anda akan mendapatkan compute node bermana `trembesi91` atau `trembesi92`. 
 
-![Screenshot 2024-07-09 at 11 57 17](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/ba3cb29c-c1f4-42d4-9647-f004d086ff88)
+![Screenshot 2024-07-11 at 09 51 58](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/d88383e2-75d8-4798-b68a-8bcb91f0ca78)
+
 
 ## 3. Menyiapkan Conda Environment
 PERHATIAN!
