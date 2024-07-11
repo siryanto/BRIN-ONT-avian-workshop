@@ -12,7 +12,7 @@ Jika berhasil, Anda masuk di login node bernama `trembesi02` seperti tampilan di
 ## 2. Bekerja dengan mode interaktif di MAHAMERU BRIN HPC
 Gunakan perintah `srun` untuk bekerja dengan cara interaktif di MAHAMERU BRIN HPC seperti berikut ini
 ```
-srun --partition=interactive --cpus-per-task=4 --pty bash
+srun --partition=interactive2 --cpus-per-task=4 --pty bash
 ```
 Jika berhasil, maka Anda akan mendapatkan compute node bermana `trembesi91` atau `trembesi92`. 
 
