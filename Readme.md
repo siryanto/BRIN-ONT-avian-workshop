@@ -233,6 +233,8 @@ Hasilnya sebagai berikut
 ```
 calls_to_draft.bam  calls_to_draft.bam.bai  consensus.fasta  consensus.fasta.gaps_in_draft_coords.bed  consensus_probs.hdf
 ```
+
+Keterangan
 `consensus.fasta` Hasil konsensus setelah polishing
 
 `calls_to_draft.bam` Alignment dari reads yang sudah dikoreksi
