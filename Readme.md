@@ -115,7 +115,11 @@ Berkas FASTQ tersebut merupakan berkas SRR15421342 yang diunduh dari DDBJ dan te
 ```
 NanoPlot --fastq SRR15421342.sampled10K.fastq -t 8 -o nanoplot_result
 ```
-Jika berhasil, output NanoPlot ada di direktori 'nanoplot_result' seperti berikut.
+Jika berhasil, output NanoPlot ada di direktori 'nanoplot_result'.
+```
+ls nanoplot_result
+```
+Tampilan hasilnya seperti gambar berikut.
 ![Screenshot 2024-07-11 at 06 54 00](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/31c225ad-1d9b-4c8f-b768-07806a0f58f2)
 Lihat summary statistik dengan perintah `less` seperti berikut
 ```
