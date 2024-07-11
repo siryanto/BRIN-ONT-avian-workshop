@@ -224,3 +224,17 @@ Jalankan `medaka_consensus` sebagai berikut
 medaka_consensus -i SRR15421342.sampled10K.fastq -d flye_result/assembly.fasta -o medaka_consensus_result -t 4 -f -m  r1041_e82_400bps_hac_g632
 ```
 Catatan: opsi `-m  r1041_e82_400bps_hac_g632` merupakan model yang digunakan, disesuaikan dengan platform yang digunakan. Untuk kasus ini, karena sampel dilakukan seqeuncing dengan PromethION dan kita asumsikan menggunakan basecalling mode HAC, maka model tersebut yang digunakan. Selain itu, jika model tersebut belum diunduh, maka saat menjalankan `medaka_consensus` komputer/server/node harus dapat mengakses internet untuk mengunduh model yang digunakan.
+
+Berkas yang dihasilkan bisa dilihat dengan perintah `ls`
+```
+ls medaka_consensus_result
+```
+Hasilnya sebagai berikut
+```
+calls_to_draft.bam  calls_to_draft.bam.bai  consensus.fasta  consensus.fasta.gaps_in_draft_coords.bed  consensus_probs.hdf
+```
+`consensus.fasta` Hasil konsensus setelah polishing
+`calls_to_draft.bam` Alignment dari reads yang sudah dikoreksi
+`calls_to_draft.bam.bai` Alignment index
+`consensus.fasta.gaps_in_draft_coords.bed` Information about gaps in the draft assembly where the consensus sequence could not be aligned or corrected
+`consensus_probs.hdf` Provides probabilistic information about the consensus sequence, offering insights into the confidence of each base call
