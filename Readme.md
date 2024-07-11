@@ -173,7 +173,10 @@ Jalankan flye
 ```
 flye --nano-raw SRR15421342.sampled10K.fastq --threads 4 --out-dir flye_result --scaffold
 ```
-Jika berhasil, akan ada direktori baru bernama `flye_result`. Hasil flye tersimpan di direktori tersebut, lihat dengan perintah `ls`.
+Jika berhasil, akan muncul tampilan summary statistic seperti gambar di bawah ini
+![Screenshot 2024-07-11 at 10 24 50](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/6711f8ba-061d-419c-a3e3-9b00e4480ee5)
+
+Selain itu, terdapat direktori baru bernama `flye_result`. Hasil flye tersimpan di direktori tersebut, lihat dengan perintah `ls`.
 ```
 ls flye_result
 ```
