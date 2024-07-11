@@ -182,7 +182,37 @@ ls flye_result
 ```
 Berikut contoh hasil luaran Flye.
 ![Screenshot 2024-07-11 at 10 01 42](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/a071a757-5c78-4d5e-9bc9-7401f0bfc344)
-
+Melihat overview hasil assembly Flye dari file `assembly_info.txt`.
+```
+less assembly_info.txt
+```
+Contoh hasilya seperti berikut ini
+```
+#seq_name       length  cov.    circ.   repeat  mult.   alt_group       graph_path
+contig_3        116765  13      N       Y       3       *       *,3,*
+contig_4        102545  5       N       Y       1       *       *,4,*
+contig_25       79521   11      N       Y       1       *       *,25,*
+contig_5        78712   5       N       Y       1       *       *,5,*
+contig_7        68998   3       N       Y       1       *       *,7,*
+contig_6        58546   20      N       Y       3       *       *,6,*
+contig_19       58348   13      N       Y       2       *       *,19
+contig_15       51147   17      N       Y       4       *       *,15,*
+contig_16       49743   3       N       Y       1       *       *,16,*
+contig_14       46502   3       N       Y       1       *       *,14,*
+contig_12       45424   3       N       Y       1       *       *,12,*
+contig_18       37337   3       N       Y       1       *       *,18,*
+contig_11       31646   7       N       Y       1       *       *,11,*
+contig_21       23842   12      N       Y       2       *       21,*
+contig_24       20178   11      N       Y       1       *       *,24,*
+contig_13       19472   21      N       Y       4       *       *,13,*
+contig_17       17260   5       N       Y       1       *       *,17,*
+contig_1        14846   20      Y       Y       3       *       1
+contig_9        13003   16      N       Y       2       4       *,9,*
+contig_2        12104   7       N       Y       2       2       *,2,*
+contig_8        7907    3       Y       Y       1       *       8
+contig_10       1426    37      Y       Y       6       *       10
+```
+Ps. Untuk keluar dari `less`, tekan tombol 'q' di keyboard
 
 ## 8. Polishing menggunakan Medaka
 Aktifkan Medaka env
