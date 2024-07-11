@@ -185,7 +185,7 @@ Berikut contoh hasil luaran Flye.
 ![Screenshot 2024-07-11 at 10 01 42](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/a071a757-5c78-4d5e-9bc9-7401f0bfc344)
 Melihat overview hasil assembly Flye dari file `assembly_info.txt`.
 ```
-less assembly_info.txt
+less flye_result/assembly_info.txt
 ```
 Contoh hasilya seperti berikut ini
 ```
