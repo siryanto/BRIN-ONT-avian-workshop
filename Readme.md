@@ -231,7 +231,11 @@ ls medaka_consensus_result
 ```
 Hasilnya sebagai berikut
 ```
-calls_to_draft.bam  calls_to_draft.bam.bai  consensus.fasta  consensus.fasta.gaps_in_draft_coords.bed  consensus_probs.hdf
+calls_to_draft.bam
+calls_to_draft.bam.bai
+consensus.fasta
+consensus.fasta.gaps_in_draft_coords.bed
+consensus_probs.hdf
 ```
 
 Keterangan
