@@ -173,6 +173,13 @@ Jalankan flye
 ```
 flye --nano-raw SRR15421342.sampled10K.fastq --threads 4 --out-dir flye_result --scaffold
 ```
+Jika berhasil, akan ada direktori baru bernama `flye_result`. Hasil flye tersimpan di direktori tersebut, lihat dengan perintah `ls`.
+```
+ls flye_result
+```
+Berikut contoh hasil luaran Flye.
+![Uploading image.png…]()
+
 ## 8. Polishing menggunakan Medaka
 Aktifkan Medaka env
 ```
