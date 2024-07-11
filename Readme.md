@@ -55,7 +55,7 @@ conda create -n nanolot -c bioconda NanoPlot
 ```
 Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
 
-Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+Jika proses selesai dan berhasil, periksa perintah NanoPlot dengan menjalankan perintah sebagai berikut.
 ```
 conda activate nanoplot
 NanoPlot --version
@@ -68,7 +68,7 @@ conda create -n flye -c bioconda flye
 ```
 Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
 
-Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+Jika proses selesai dan berhasil, periksa perintah NanoPlot dengan menjalankan perintah sebagai berikut.
 ```
 conda activate flye
 flye --version
@@ -80,7 +80,7 @@ conda create -n medaka -c bioconda medaka
 ```
 Ketik 'Y' untuk melanjutkan instalasi saat proses meinta konfirmasi. Ada banyak paket yang dibutuhkan NanoPlot, sehingga semua paket tersebut akan diunduh dan selanjutnya dipasang. Tunggu hingga proses instalasi selesai.
 
-Jika proses selesai dan berhasil, cek perintah NanoPlot dengan menjalankan perintah sebagai berikut.
+Jika proses selesai dan berhasil, periksa perintah NanoPlot dengan menjalankan perintah sebagai berikut.
 ```
 conda activate medaka
 medaka --version
