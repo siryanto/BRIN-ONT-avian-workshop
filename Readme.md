@@ -178,7 +178,8 @@ Jika berhasil, akan ada direktori baru bernama `flye_result`. Hasil flye tersimp
 ls flye_result
 ```
 Berikut contoh hasil luaran Flye.
-![Uploading image.png…]()
+![Screenshot 2024-07-11 at 10 01 42](https://github.com/siryanto/BRIN-ONT-avian-workshop/assets/30887367/a071a757-5c78-4d5e-9bc9-7401f0bfc344)
+
 
 ## 8. Polishing menggunakan Medaka
 Aktifkan Medaka env
