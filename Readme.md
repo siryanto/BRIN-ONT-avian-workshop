@@ -235,6 +235,7 @@ calls_to_draft.bam  calls_to_draft.bam.bai  consensus.fasta  consensus.fasta.gap
 ```
 
 Keterangan
+
 `consensus.fasta` Hasil konsensus setelah polishing
 
 `calls_to_draft.bam` Alignment dari reads yang sudah dikoreksi
