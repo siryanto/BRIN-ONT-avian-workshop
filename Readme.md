@@ -234,7 +234,11 @@ Hasilnya sebagai berikut
 calls_to_draft.bam  calls_to_draft.bam.bai  consensus.fasta  consensus.fasta.gaps_in_draft_coords.bed  consensus_probs.hdf
 ```
 `consensus.fasta` Hasil konsensus setelah polishing
+
 `calls_to_draft.bam` Alignment dari reads yang sudah dikoreksi
+
 `calls_to_draft.bam.bai` Alignment index
+
 `consensus.fasta.gaps_in_draft_coords.bed` Information about gaps in the draft assembly where the consensus sequence could not be aligned or corrected
+
 `consensus_probs.hdf` Provides probabilistic information about the consensus sequence, offering insights into the confidence of each base call
