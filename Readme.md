@@ -64,7 +64,7 @@ NanoPlot --version
 
 ```
 Jika berhasil, maka layar akan menampilkan kode versi NanoPlot. 
-### 4.2 Install flye
+### 4.2 Install Flye
 ```
 conda create -n flye -c bioconda flye
 ```
@@ -76,7 +76,7 @@ conda activate flye
 flye --version
 
 ```
-### 4.3 Install medaka
+### 4.3 Install Medaka
 ```
 conda create -n medaka -c bioconda medaka
 ```
