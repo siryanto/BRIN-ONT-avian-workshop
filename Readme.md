@@ -156,6 +156,8 @@ Top 5 longest reads and their mean basecall quality score
 5:      199725 (14.9)
 ```
 Untuk keluar dari perintah `less`, tekan tombol 'q' di keyboard Anda.
+
+Hasil plot berupa citra PNG dan report HTML dapat diunduh dengan SFTP manager seperti: FileZilla, CyberDuck, dll. (Akan dijelaskan di akhir sesi jika masih ada waktu)
 ## 7. Assembly menggunakan Flye
 ```
 ```
