@@ -120,7 +120,7 @@ conda activate nanoplot
 ```
 Jalankan NanoPlot
 ```
-NanoPlot --fastq SRR15421342.sampled10K.fastq -t 8 -o nanoplot_result
+NanoPlot --fastq SRR15421342.sampled10K.fastq -t 4 -o nanoplot_result
 ```
 Jika berhasil, output NanoPlot ada di direktori 'nanoplot_result'.
 ```
